@@ -8,6 +8,19 @@ const showMenu = (toggleId, navId) => {
 		})
 	}
 }
+
+console.log("Welcome to Coastal Cuisine!");
+
+window.myDataLayer = window.myDataLayer || {};
+window.myDataLayer.page={
+    event:"pageview",
+    pageinfo:{
+        pageName:document.title,
+        pageURL:window.location.href,
+        pagepath:window.location.pathname
+    }
+};
+ 
 showMenu('nav-toggle', 'nav-menu')
 
 // Remove Mobile Menu
